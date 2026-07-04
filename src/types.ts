@@ -6,11 +6,11 @@ interface Message {
 }
 
 interface Tool {
-  tool_name: string;
+  name: string;
   description: string;
-  action: string;
+  execute: (args: unknown) => Promise<unknown>;
 }
 
 interface LLM_Response {
-  response: string;
+  message: Message;
 }
