@@ -1,9 +1,10 @@
+type Role = "system" | "user" | "assistant" | "tool";
+
 interface Prompt {
   role: string;
   prompt: string;
 }
 
-type Role = "system" | "user" | "assistant" | "tool";
 
 interface Tool {
   tool_name: string;
